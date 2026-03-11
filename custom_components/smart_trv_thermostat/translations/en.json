@@ -1,1 +1,71 @@
-
+{
+  "title": "Smart TRV Thermostat",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Smart TRV Thermostat",
+        "description": "Create a virtual thermostat that uses any Home Assistant temperature source to control a TRV.",
+        "data": {
+          "name": "Name",
+          "trv_entity": "TRV climate entity",
+          "sensor_entity": "Temperature source (sensor or weather)",
+          "humidity_entity": "Humidity source (optional)",
+          "window_entity": "Window sensor",
+          "boiler_entity": "Boiler entity",
+          "enable_boiler_coord": "Enable boiler coordination",
+          "boiler_mode": "Boiler mode",
+          "enable_runtime_stats": "Enable runtime statistics",
+          "min_temp": "Minimum temperature",
+          "max_temp": "Maximum temperature",
+          "target_temp": "Default target temperature",
+          "heat_delta": "Heating start delta",
+          "stop_delta": "Heating stop delta",
+          "sensor_offset": "Sensor offset",
+          "min_heating_time": "Minimum heating time (seconds)",
+          "min_idle_time": "Minimum idle time (seconds)",
+          "open_valve_temp": "TRV temperature for open valve",
+          "close_valve_temp": "TRV temperature for closed valve",
+          "window_open_delay": "Window open delay (seconds)",
+          "window_close_delay": "Window close delay (seconds)",
+          "reaction_speed": "Reaction speed preset",
+          "precision": "Displayed precision"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This TRV + sensor pair is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Smart TRV Thermostat options",
+        "data": {
+          "name": "Name",
+          "trv_entity": "TRV climate entity",
+          "sensor_entity": "Temperature source (sensor or weather)",
+          "humidity_entity": "Humidity source (optional)",
+          "window_entity": "Window sensor",
+          "boiler_entity": "Boiler entity",
+          "enable_boiler_coord": "Enable boiler coordination",
+          "boiler_mode": "Boiler mode",
+          "enable_runtime_stats": "Enable runtime statistics",
+          "min_temp": "Minimum temperature",
+          "max_temp": "Maximum temperature",
+          "target_temp": "Default target temperature",
+          "heat_delta": "Heating start delta",
+          "stop_delta": "Heating stop delta",
+          "sensor_offset": "Sensor offset",
+          "min_heating_time": "Minimum heating time (seconds)",
+          "min_idle_time": "Minimum idle time (seconds)",
+          "open_valve_temp": "TRV temperature for open valve",
+          "close_valve_temp": "TRV temperature for closed valve",
+          "window_open_delay": "Window open delay (seconds)",
+          "window_close_delay": "Window close delay (seconds)",
+          "reaction_speed": "Reaction speed preset",
+          "precision": "Displayed precision"
+        }
+      }
+    }
+  }
+}
