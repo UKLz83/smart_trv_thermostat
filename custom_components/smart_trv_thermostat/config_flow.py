@@ -70,11 +70,11 @@ def _build_schema(current: dict[str, Any] | None = None) -> vol.Schema:
             vol.Required(
                 CONF_SENSOR_ENTITY,
                 default=current.get(CONF_SENSOR_ENTITY),
-            ): selector.EntitySelector(selector.EntitySelectorConfig(domain=TEMP_SOURCE_DOMAINS)),
+            ): selector.EntitySelector(selector.EntitySelectorConfig()),
             vol.Optional(
                 CONF_HUMIDITY_ENTITY,
                 default=current.get(CONF_HUMIDITY_ENTITY),
-            ): selector.EntitySelector(selector.EntitySelectorConfig(domain=HUMIDITY_SOURCE_DOMAINS)),
+            ): selector.EntitySelector(selector.EntitySelectorConfig()),
             vol.Optional(
                 CONF_WINDOW_ENTITY,
                 default=current.get(CONF_WINDOW_ENTITY),
