@@ -1,1 +1,9 @@
-
+{
+  "domain": "smart_trv_thermostat",
+  "name": "Smart TRV Thermostat",
+  "version": "0.2.1",
+  "documentation": "https://github.com/USERNAME/smart_trv_thermostat",
+  "requirements": [],
+  "codeowners": [],
+  "config_flow": true
+}
